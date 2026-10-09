@@ -36,17 +36,17 @@ u{text-decoration-color:var(--accent-3);text-underline-offset:4px;color:var(--ac
 .nav-cta{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);border:2px solid var(--accent);border-radius:30px;padding:9px 18px;transition:.25s;white-space:nowrap}
 .nav-cta:hover{background:rgba(255,180,84,.18);color:#fff}
 .nav-cta.active{background:var(--grad);color:#1a0b3a;border-color:transparent;box-shadow:0 6px 22px rgba(255,95,162,.45)}
-.cta{display:block;width:fit-content;margin:18px auto 0;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:2px;transition:.25s}
+.cta{display:block;width:fit-content;margin:18px 0 0;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);border-bottom:2px solid var(--accent);padding-bottom:2px;transition:.25s}
 .cta:hover{color:var(--accent-3);border-bottom-color:var(--accent-3)}
 
 /* Text basics */
 .eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--accent-3);margin:0}
 .hero h1,.page h1,.detail h1,.form h1{font-weight:400;font-size:clamp(34px,5vw,70px);line-height:1.15;margin:20px 0 28px;color:var(--ink)}
-.statement h2,.feature h2,.banner h2,.detail h2{font-weight:400;font-size:clamp(28px,3.6vw,50px);line-height:1.2;color:var(--ink)}
+.statement h2,.feature h2,.banner h2,.detail h2,.archive h2{font-weight:400;font-size:clamp(28px,3.6vw,50px);line-height:1.2;color:var(--ink);margin:10px 0 20px}
 .hero p,.page>p{max-width:540px;color:var(--muted)}
 
 /* Buttons */
-.btn{display:block;width:fit-content;margin:28px auto 0;background:var(--grad);color:#1a0b3a;padding:14px 24px;text-transform:uppercase;font-size:11px;letter-spacing:.12em;border:0;border-radius:40px;cursor:pointer;box-shadow:0 8px 28px rgba(255,95,162,.35);transition:.25s;text-align:center}
+.btn{display:block;width:fit-content;margin:28px 0 0;background:var(--grad);color:#1a0b3a;padding:14px 24px;text-transform:uppercase;font-size:11px;letter-spacing:.12em;border:0;border-radius:40px;cursor:pointer;box-shadow:0 8px 28px rgba(255,95,162,.35);transition:.25s;text-align:center}
 .btn:hover{transform:translateY(-3px);box-shadow:0 12px 34px rgba(255,180,84,.5)}
 
 /* Hero */
@@ -70,7 +70,7 @@ u{text-decoration-color:var(--accent-3);text-underline-offset:4px;color:var(--ac
 .banner{background:linear-gradient(135deg,#3a1479 0%,#7a1a6e 55%,#b0305f 100%);color:var(--ink);text-align:center;padding:11vw 7vw}
 .banner .eyebrow{color:#fff6c9}
 .banner em{background:none;-webkit-text-fill-color:#ffe08a;color:#ffe08a}
-.banner .btn{background:#ffffff;color:#2b0f55;box-shadow:0 8px 28px rgba(0,0,0,.35)}
+.banner .btn{background:#ffffff;color:#2b0f55;box-shadow:0 8px 28px rgba(0,0,0,.35);margin:28px auto 0}
 
 /* Client voices (home) */
 .voices{padding:8vw 7vw;background:var(--bg-2);border-top:1px solid var(--line)}
@@ -92,7 +92,8 @@ u{text-decoration-color:var(--accent-3);text-underline-offset:4px;color:var(--ac
 .footer p{color:var(--muted);margin:14px 0 0}
 .footer h3{font-weight:400;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
 .footer ul{list-style:none;margin:0;padding:0}
-.footer li{margin-bottom:8px}
+.footer li{margin-bottom:10px;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--ink)}
+.footer li svg{width:15px;height:15px;fill:currentColor;color:var(--accent-3);flex:none}
 .footer li a{color:var(--ink);font-size:13px;transition:.25s}
 .footer li a:hover{color:var(--accent-3)}
 .social{display:flex;gap:12px;margin-top:20px;flex-wrap:wrap}
@@ -121,7 +122,10 @@ u{text-decoration-color:var(--accent-3);text-underline-offset:4px;color:var(--ac
 .ribbon-btn{background:var(--bg-2);border:1px solid var(--line);border-radius:30px;padding:10px 22px;color:var(--ink);font-size:12px;letter-spacing:.06em;transition:.25s;cursor:pointer}
 .ribbon-btn:hover,.ribbon-btn.active{background:var(--grad);color:#1a0b3a;border-color:transparent;transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,95,162,.3)}
 
-/* 2. Results Hero - Split HD Photo Showcase with Floating Glow Badge */
+/* 2. Results Hero - Simple Centered Header */
+.results-hero-simple{padding:5vw 8vw 2.5vw;text-align:center}
+.results-hero-simple h1{font-size:clamp(34px,5vw,64px);line-height:1.15;margin:0;color:var(--ink);text-align:center}
+
 .results-hero{padding:4.5vw 8vw;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;background:var(--bg-1);border-bottom:1px solid var(--line)}
 .results-hero-copy h1{font-size:clamp(34px,4.5vw,62px);line-height:1.15;margin:16px 0 20px;color:var(--ink)}
 .results-hero-copy p{color:var(--muted);max-width:480px;line-height:1.6;margin-bottom:28px}
@@ -175,9 +179,14 @@ u{text-decoration-color:var(--accent-3);text-underline-offset:4px;color:var(--ac
 .facts{display:flex;flex-wrap:wrap;gap:12px;margin-top:35px;font-size:11px;letter-spacing:.1em}
 .facts span{color:#1a0b3a;background:var(--accent-3);padding:6px 14px;border-radius:30px}
 
-.gallery{columns:2;column-gap:18px;padding:4vw 7vw 10vw}
-.gallery figure{margin:0 0 18px;break-inside:avoid}
-.gallery figcaption{padding:12px 0 18px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent)}
+.gallery-header{padding:5vw 7vw 1vw;text-align:left}
+.gallery-header h2{font-weight:400;font-size:clamp(26px,3.2vw,44px);line-height:1.2;color:var(--ink);margin:10px 0 0}
+
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;padding:2vw 7vw 8vw}
+.gallery figure{margin:0;display:flex;flex-direction:column;border-radius:18px;overflow:hidden;background:var(--bg-2);border:1px solid var(--line);transition:.3s ease}
+.gallery figure:hover{transform:translateY(-4px);border-color:var(--accent-3);box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.gallery figure img{width:100%;height:360px;object-fit:cover;border-radius:0;border:0;display:block}
+.gallery figcaption{padding:14px 18px;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);background:var(--bg-3);border-top:1px solid var(--line);margin:0}
 
 .people{display:grid;grid-template-columns:1fr 1fr;gap:35px;padding:4vw 8vw 10vw}
 .person:nth-child(even){margin-top:120px}
@@ -273,7 +282,7 @@ input:focus,textarea:focus{border-color:var(--accent-3);box-shadow:0 0 0 3px rgb
   .treatment img{height:480px;object-position:50% 25%}
   .person img{height:auto;aspect-ratio:4/5;max-height:560px;object-position:50% 12%}
   .person:nth-child(even){margin-top:0}
-  .gallery{columns:1}
+  .gallery{grid-template-columns:1fr}
   .auth-img{height:52vh}
   .wide{height:55vh;padding:0 4vw 12vw}
   .step-card h3,.standard-card h3{height:auto;min-height:0}
